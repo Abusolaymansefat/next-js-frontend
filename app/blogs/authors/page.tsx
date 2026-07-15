@@ -1,13 +1,14 @@
+import MyServerComponent from '@/app/ui/MyServerComponent';
 import React from 'react'
 
 const AuthorsPage = async () => {
 
-  const posts = await fetch('https://jsonplaceholder.typicode.com/posts')
-  const postData = await posts.json();
-  console.log(postData)
-  return (
+ 
+    return (
     <div>
       <h1>authors page here </h1>
+    
+      <MyServerComponent />
     </div>
   )
 }
